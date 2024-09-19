@@ -6,7 +6,6 @@ import {
 	Button,
 	Link as RadixLink
 } from '@radix-ui/themes';
-import { Roboto_Flex } from 'next/font/google';
 import Link from 'next/link';
 
 export default function NavigationBar() {

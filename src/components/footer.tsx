@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Footer() {
 	return (
 		<Box position={'fixed'} bottom={'1'} className="w-full">
-			<Container>
+			<Container size={'4'} px={{ initial: '2', lg: '0' }}>
 				<Flex justify={'between'}>
 					<Flex></Flex>
 					<Flex>
