@@ -24,7 +24,13 @@ export default function NavigationBar() {
 					direction={'row'}
 					align={'center'}
 				>
-					<Heading color="gray">Devcraft</Heading>
+					<Heading
+						color="gray"
+						weight={'bold'}
+						size={{ initial: '4', lg: '6' }}
+					>
+						Devcraft
+					</Heading>
 
 					<Flex as="div" gapX={'4'} align={'center'}>
 						<RadixLink
