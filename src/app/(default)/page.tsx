@@ -1,7 +1,11 @@
+import { Section, Container } from '@radix-ui/themes';
+
 export default function Home() {
 	return (
 		<main>
-			<span>home</span>
+			<Container>
+				<Section>home</Section>
+			</Container>
 		</main>
 	);
 }

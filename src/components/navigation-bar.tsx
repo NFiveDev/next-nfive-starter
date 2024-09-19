@@ -16,6 +16,7 @@ export default function NavigationBar() {
 			top={'0'}
 			py={'3'}
 			className="border-b border-slate-600"
+			px={{ initial: '3', lg: '0' }}
 		>
 			<Container size={'4'}>
 				<Flex
