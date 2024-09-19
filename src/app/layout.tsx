@@ -1,8 +1,8 @@
-import type { Metadata } from 'next';
 import './globals.css';
 import '@radix-ui/themes/styles.css';
 import { Inter } from 'next/font/google';
 import { Theme } from '@radix-ui/themes';
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -17,9 +17,17 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
-			<body className={`${inter.className}`}>
-				<Theme>{children}</Theme>
+		<html lang="en" className="h-full">
+			<body className={`${inter.className} min-h-screen`}>
+				<Theme
+					accentColor="jade"
+					grayColor="slate"
+					panelBackground="solid"
+					radius="small"
+					appearance="dark"
+				>
+					{children}
+				</Theme>
 			</body>
 		</html>
 	);
