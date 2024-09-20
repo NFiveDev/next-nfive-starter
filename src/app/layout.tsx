@@ -17,13 +17,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="h-full">
-			<body className={`${inter.className} min-h-screen`}>
+		<html lang="en">
+			<body className={`${inter.className}`}>
 				<Theme
 					accentColor="jade"
 					grayColor="slate"
 					panelBackground="solid"
-					radius="small"
+					radius="medium"
 					appearance="dark"
 				>
 					{children}

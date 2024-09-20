@@ -1,6 +1,6 @@
 import Footer from '@/components/footer';
 import NavigationBar from '@/components/navigation-bar';
-import { Box, Flex } from '@radix-ui/themes';
+import { Box } from '@radix-ui/themes';
 
 export default function DefaultLayout({
 	children
@@ -10,7 +10,9 @@ export default function DefaultLayout({
 	return (
 		<Box>
 			<NavigationBar />
-			<Box pb={'6'}>{children}</Box>
+			<Box flexGrow={'1'} pb={'6'} pt={'4'}>
+				{children}
+			</Box>
 			<Footer />
 		</Box>
 	);

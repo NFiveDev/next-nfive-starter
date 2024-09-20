@@ -10,14 +10,20 @@ import Link from 'next/link';
 
 export default function NavigationBar() {
 	return (
-		<Box
+		<Container
+			size={'4'}
 			position={'sticky'}
-			top={'0'}
-			py={'3'}
-			className="border-b border-slate-600"
-			px={{ initial: '3', lg: '0' }}
+			top={{ initial: '0', lg: '3' }}
+			maxWidth={'1160px'}
 		>
-			<Container size={'4'}>
+			<Box
+				py={'3'}
+				px={'4'}
+				style={{
+					background: 'var(--color-panel);',
+					borderRadius: '5px'
+				}}
+			>
 				<Flex
 					justify={'between'}
 					wrap={'nowrap'}
@@ -49,7 +55,7 @@ export default function NavigationBar() {
 						</Link>
 					</Flex>
 				</Flex>
-			</Container>
-		</Box>
+			</Box>
+		</Container>
 	);
 }
