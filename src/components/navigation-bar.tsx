@@ -7,6 +7,7 @@ import {
 	Link as RadixLink
 } from '@radix-ui/themes';
 import Link from 'next/link';
+import ThemeToggle from './theme-toggle';
 
 export default function NavigationBar() {
 	return (
@@ -39,6 +40,10 @@ export default function NavigationBar() {
 					</Heading>
 
 					<Flex as="div" gapX={'4'} align={'center'}>
+						<Box mr={'1'}>
+							<ThemeToggle />
+						</Box>
+
 						<RadixLink
 							href="/signup"
 							size={'2'}
