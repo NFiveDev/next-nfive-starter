@@ -17,8 +17,6 @@ export default function ThemeToggle() {
 		setMounted(true);
 	}, []);
 
-	console.log(theme);
-
 	if (!mounted) return null;
 
 	return (
