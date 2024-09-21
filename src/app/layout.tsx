@@ -3,6 +3,7 @@ import '@radix-ui/themes/styles.css';
 import { Inter } from 'next/font/google';
 import { Theme } from '@radix-ui/themes';
 import type { Metadata } from 'next';
+import { ThemeProvider } from 'next-themes';
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -19,15 +20,16 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.className}`}>
-				<Theme
-					accentColor="jade"
-					grayColor="slate"
-					panelBackground="solid"
-					radius="medium"
-					appearance="dark"
-				>
-					{children}
-				</Theme>
+				<ThemeProvider attribute="class" defaultTheme="dark">
+					<Theme
+						accentColor="jade"
+						grayColor="slate"
+						panelBackground="solid"
+						radius="medium"
+					>
+						{children}
+					</Theme>
+				</ThemeProvider>
 			</body>
 		</html>
 	);
