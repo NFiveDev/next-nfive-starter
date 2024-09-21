@@ -18,22 +18,23 @@ export default function Home() {
 				left={'0'}
 				right={'0'}
 				height={'900px'}
+				overflowX={'hidden'}
 				className={styles.hero_landing_bg}
 			></Box>
 			<Container size={'4'} px={{ initial: '2', lg: '0' }}>
 				<Section>
 					<Flex
-						justify={'center'}
 						align={'center'}
 						direction={'column'}
 						gapY={'2'}
-						pt={'9'}
+						pt={{ initial: '0', lg: '9' }}
+						style={{ textAlign: 'center' }}
 					>
 						<Heading
-							size={'9'}
+							size={{ initial: '7', lg: '9' }}
 							color="gray"
 							highContrast
-							style={{ display: 'inline-block' }}
+							weight={'bold'}
 						>
 							{'Welcome to this '}
 							<TextGradient
@@ -43,18 +44,22 @@ export default function Home() {
 								Starter Template
 							</TextGradient>
 						</Heading>
-						<Heading color="gray" size={'2'} weight={'regular'}>
-							This is a subheader explaining more about the site.
-							Keep the user exited
-						</Heading>
-						<Flex gap={'4'} mt={'2'}>
-							<Button size={'3'}>Get started</Button>
-							<Button size={'3'} variant="solid" color="gray">
+						<Box px={{ initial: '5', lg: '0' }}>
+							<Heading color="gray" size={'2'} weight={'regular'}>
+								This is a subheader explaining more about the
+								site. Keep the user exited
+							</Heading>
+						</Box>
+
+						<Flex direction={{initial: 'column', lg: 'row'}} gap={'4'} mt={'2'}>
+							<Button size={{initial: '3', lg: '3' }}>Get started</Button>
+							<Button size={{initial: '3', lg: '3' }} variant="solid" color="gray">
 								Watch intro
 							</Button>
 						</Flex>
 					</Flex>
 				</Section>
+				<Section></Section>
 			</Container>
 		</main>
 	);
