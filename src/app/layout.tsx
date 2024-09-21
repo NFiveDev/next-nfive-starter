@@ -20,17 +20,16 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.className}`}>
-				<ThemeProvider attribute='class' defaultTheme='dark'>
-				<Theme
-					accentColor="jade"
-					grayColor="slate"
-					panelBackground="solid"
-					radius="medium"
-				>
-					{children}
-				</Theme>
+				<ThemeProvider attribute="class" defaultTheme="dark">
+					<Theme
+						accentColor="jade"
+						grayColor="slate"
+						panelBackground="solid"
+						radius="medium"
+					>
+						{children}
+					</Theme>
 				</ThemeProvider>
-				
 			</body>
 		</html>
 	);
