@@ -26,3 +26,8 @@ Check turso docs: https://docs.turso.tech/introduction
 
 -   npm run db:studio
 -   npm run db:migrate
+
+## Deployment:
+
+1. Create env.local file
+2. Copy variables from env.development to env.local or env.production
