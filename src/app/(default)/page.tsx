@@ -1,4 +1,11 @@
-import { Section, Container, Box } from '@radix-ui/themes';
+import {
+	Section,
+	Container,
+	Box,
+	Heading,
+	Flex,
+	Button
+} from '@radix-ui/themes';
 import styles from './home.module.css';
 import TextGradient from '@/components/text-gradient';
 
@@ -15,13 +22,38 @@ export default function Home() {
 			></Box>
 			<Container size={'4'} px={{ initial: '2', lg: '0' }}>
 				<Section>
-					<TextGradient
-						as="h1"
-						gradient="jade-to-jade"
-						direction="left-to-right"
+					<Flex
+						justify={'center'}
+						align={'center'}
+						direction={'column'}
+						gapY={'2'}
+						pt={'9'}
 					>
-						Devcraft
-					</TextGradient>
+						<Heading
+							size={'9'}
+							color="gray"
+							highContrast
+							style={{ display: 'inline-block' }}
+						>
+							{'Welcome to this '}
+							<TextGradient
+								gradient="jade-to-jade"
+								direction="left-to-right"
+							>
+								Starter Template
+							</TextGradient>
+						</Heading>
+						<Heading color="gray" size={'2'} weight={'regular'}>
+							This is a subheader explaining more about the site.
+							Keep the user exited
+						</Heading>
+						<Flex gap={'4'} mt={'2'}>
+							<Button size={'3'}>Get started</Button>
+							<Button size={'3'} variant="solid" color="gray">
+								Watch intro
+							</Button>
+						</Flex>
+					</Flex>
 				</Section>
 			</Container>
 		</main>

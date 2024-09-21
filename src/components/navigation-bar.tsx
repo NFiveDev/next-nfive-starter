@@ -20,7 +20,7 @@ export default function NavigationBar() {
 				py={'3'}
 				px={'4'}
 				style={{
-					background: 'var(--color-panel);',
+					background: 'var(--color-panel)',
 					borderRadius: '5px'
 				}}
 			>
