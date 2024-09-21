@@ -1,5 +1,6 @@
 import { Section, Container, Box } from '@radix-ui/themes';
 import styles from './home.module.css';
+import TextGradient from '@/components/text-gradient';
 
 export default function Home() {
 	return (
@@ -13,7 +14,15 @@ export default function Home() {
 				className={styles.hero_landing_bg}
 			></Box>
 			<Container size={'4'} px={{ initial: '2', lg: '0' }}>
-				<Section>home</Section>
+				<Section>
+					<TextGradient
+						as="h1"
+						gradient="jade-to-jade"
+						direction="left-to-right"
+					>
+						Devcraft
+					</TextGradient>
+				</Section>
 			</Container>
 		</main>
 	);

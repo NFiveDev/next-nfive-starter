@@ -13,7 +13,11 @@ const ResolveGradientCls = (
 	input: GradientColorVariants,
 	direction: GradientDirection
 ) => {
-	return '';
+	const directionMap = new Map<GradientDirection, string>([
+		['left-to-right', 'to right']
+	]);
+
+	const directionCss = directionMap.get(direction);
 };
 
 export default function TextGradient({
