@@ -18,6 +18,7 @@ This project template uses turso. If you want to continue with it use:
 
 ```bash
 turso dev --db-file local.db
+turso dev -p 4000 --db-file local.db
 ```
 
 Check turso docs: https://docs.turso.tech/introduction
