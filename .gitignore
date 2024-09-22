@@ -38,3 +38,8 @@ src/db/schema.ts
 local.dev.db
 local.dev.db-shm
 local.dev.db-wal
+local.db
+local.db-shm
+local.db-wal
+
+drizzle/*

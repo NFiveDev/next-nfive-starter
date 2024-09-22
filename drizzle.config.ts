@@ -1,17 +1,14 @@
+import './envConfig';
 import { defineConfig } from 'drizzle-kit';
 
-const DATABASE_URL = process.env.DATABASE_URL;
-
-if (!DATABASE_URL)
-	throw new Error(
-		'You cannot run migration with a valid: DATABASE_URL env variable'
-	);
-
 export default defineConfig({
-	dialect: 'sqlite',
 	schema: './src/db/schema.ts',
-	out: './drizzle',
+	dialect: 'sqlite',
+	driver: 'turso',
 	dbCredentials: {
-		url: DATABASE_URL
-	}
+		url: process.env.DATABASE_URL!,
+		authToken: 'something'
+	},
+	strict: true,
+	verbose: true
 });
