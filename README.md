@@ -10,6 +10,13 @@ npm run dev
 pnpm dev
 ```
 
+## Environment variables local development:
+
+Create local env file.
+`
+DATABASE_URL=http://127.0.0.1:4000
+`
+
 ## Database
 
 This project template uses turso. If you want to continue with it use:
